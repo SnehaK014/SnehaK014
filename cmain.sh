@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#SNEHAKHATRIPROJECT
 # Configuration
 LOG_FILE="/var/log/auth.log"           # Log file to monitor
 THRESHOLD=5                            # Failed attempts threshold
@@ -27,7 +27,7 @@ is_whitelisted() {
         return 1    # IP is not whitelisted
     fi
 }
-
+#SNEHAKHATRI PROJECT
 # Function to send notification
 send_notification() {
     IP=$1
@@ -35,6 +35,7 @@ send_notification() {
 }
 
 # Function to detect brute force attacks
+#SNEHAKHATRIPROJECT
 detect_brute_force() {
     grep "Failed password" $LOG_FILE | awk '{print $(NF-3)}' | sort | uniq -c | sort -nr > $DETECTED_IPS_LOG
     
