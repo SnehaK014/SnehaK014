@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Email configuration
+#SNEHAKHATRIPROJECT
 ADMIN_EMAIL="admin@example.com"
 SUBJECT="SSH Brute Force Attack Detected"
 BODY="A brute force attack was detected from IP: $1. The IP has been blocked."
